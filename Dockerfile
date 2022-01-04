@@ -31,7 +31,7 @@ COPY . .
 
 ## Now we have the source code in the docker image
 ## In order to run code, use an ENV 
-ENV PORT=8080a
+ENV PORT=8080
 
 ## EXPOSE defines the port the container will listen to during runtime
 EXPOSE 8080
@@ -39,4 +39,8 @@ EXPOSE 8080
 ## The final instruction should be the CMD instruction
 ## There can be only one of these CMD per dockerfile 
 ## CMD tells the container how to run the actual applicaiton
-CMD ["npm", "start"]
+CMD ["yarn", "dev"]
+
+
+## To build a docker image, use docker build -t <name>
+## -t = tag, gives the image a nametag
