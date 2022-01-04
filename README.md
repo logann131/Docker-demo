@@ -1,8 +1,7 @@
 
 # Docker_demo
-- To build a docker image, use docker build -t <name>
+- docker build -t [name] . : to build an image
 - -t = tag, gives the image a nametag
-- docker images to see all the images running
 - docker run <imageID> to run the image
 - docker run -p <localPORT>:<8080> so that the app will listen on localPORT
 
