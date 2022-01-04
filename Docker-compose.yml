@@ -1,0 +1,22 @@
+version: '3'
+
+## Inside servers, each key represents each container
+services:
+  ## web defines nodejs app container
+  web:
+    build: .
+    ports:
+      - '8080:8080'
+  ## db is the database container
+  db:
+    platform: linux/x86_64
+    image: 'mysql'
+    environment:
+      MYSQL_ROOT_PASSWORD: 'password'
+    ## mount volume into db container
+    volumes:
+      - db-data:/foo
+
+## Volume help store database data across multible containers
+volumes:
+  db-data:

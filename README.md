@@ -14,3 +14,10 @@
 - docker image rm [imageID || imageName:version]
 
 - docker exec -it [containerID] bash : Create new bash session
+
+### Docker Compose
+
+- Docker compose allows multible containers run at once
+- First build docker-compose.yml
+- docker compose up : run the compose
+- docker compose down : stop all the containers
