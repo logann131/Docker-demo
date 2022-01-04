@@ -42,5 +42,3 @@ EXPOSE 8080
 CMD ["yarn", "dev"]
 
 
-## To build a docker image, use docker build -t <name>
-## -t = tag, gives the image a nametag
