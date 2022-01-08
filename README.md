@@ -1,5 +1,13 @@
 # Docker_demo
 
+## IMPORTANT
+### DOCKERFILE is a blueprint for building DOCKER IMAGE
+### DOCKER IMAGE is a template for running DOCKER CONTAINERS
+### CONTAINER is a running process
+
+### A Developer can define the code environment with a docker file, then any other developer 
+### can use that Dockerfile to recreate the environment = image
+
 - docker build -t [name] . : build an image
 - -t = tag, gives the image a nametag
 - docker run [imageID] : run the image -> create a container
