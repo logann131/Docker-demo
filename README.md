@@ -9,6 +9,7 @@ This repo's image is pushed to the docker hub at: [docker/node-app](https://hub.
   2. Run the image in detach mode with an assigned port 
   
   ``` docker run -d -p 5001:8080 lgad31vn/node-app ```
+  
   3. Access localhost:5001 to see the express server running
 
 
